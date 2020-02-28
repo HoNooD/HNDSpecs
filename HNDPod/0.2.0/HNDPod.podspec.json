@@ -1,0 +1,47 @@
+{
+  "name": "HNDPod",
+  "version": "0.2.0",
+  "summary": "A pod used to test my idea",
+  "description": "A looooooooooooooooooooooooooooooooong description of HNDPod.",
+  "homepage": "https://github.com/HoNooD/HNDPod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "HoNooD": "honood@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/HoNooD/HNDPod.git",
+    "tag": "0.2.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "HNDPod/Classes/**/*.{h,m}",
+  "public_header_files": "HNDPod/Classes/Headers/Public/*.h",
+  "subspecs": [
+    {
+      "name": "FeatureX",
+      "dependencies": {
+        "AFNetworking/Serialization": [
+          "3.2.1"
+        ],
+        "Mantle": [
+          "2.1.1"
+        ]
+      }
+    },
+    {
+      "name": "FeatureY",
+      "dependencies": {
+        "Masonry": [
+          "1.1.0"
+        ],
+        "SDWebImage/Core": [
+          "5.5.2"
+        ]
+      }
+    }
+  ]
+}
